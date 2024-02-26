@@ -7,6 +7,10 @@ math: true
 excerpt: 记录在使用C#进行STK二次开发时的操作
 ---
 
+## 写在前面
+
+如果图片未能加载，请在确保能访问 [Google](https://www.google.com/) 后刷新本页面。
+
 ## 准备工作
 
 在新建项目前，对于 STK 9 和 STK 11，均需以管理员权限运行`STK Install Folder\bin\AgPluginReg.exe`以注册所有`.dll`文件

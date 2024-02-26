@@ -4,14 +4,16 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-+ **Gender**
-
-  Male
-
-+ **Current Residence**
+### Personal Information
++ **Current Residence** 
 
   Harbin, China
++ **Gender** 
 
-+ **E-mail**
+  Male
++ **Birth Year**
 
-  hxyx860824@gmail.com
+   2002
+
+### Other
++ The information was last updated on: **Feb 26, 2024**

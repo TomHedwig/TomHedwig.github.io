@@ -23,7 +23,7 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: 'https://TomHedwig.github.io'
+url: 'https://www.hxyx-blog.top'
 
 github:
   username: TomHedwig # change to your github username
@@ -38,8 +38,9 @@ social:
   email: hxyx860824@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/tom_hedwig # change to your twitter homepage
     - https://github.com/TomHedwig # change to your github homepage
+    - https://twitter.com/tom_hedwig # change to your twitter homepage
+    - https://space.bilibili.com/513594066
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -204,3 +205,6 @@ jekyll-archives:
     category: /categories/:name/
 
 excerpt_separator: <!--more-->
+
+plugins:
+  - jekyll-seo-tag

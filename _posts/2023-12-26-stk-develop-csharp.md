@@ -104,9 +104,9 @@ excerpt: 记录在使用C#进行STK二次开发时的操作
 
 **原因**：程序中第一次实例化`AgStkObjectRoot`时，若不存在以下内容中的任意一个：
 
-+ *AxAgUiAxVOCntrl* 控件
-+ *AxAgUiAx2DCntrl* 控件
-+ *AgSTKXApplication* 实例
++ `AxAgUiAxVOCntrl` 控件
++ `AxAgUiAx2DCntrl` 控件
++ `AgSTKXApplication` 实例
 
 则会抛出该异常
 

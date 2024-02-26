@@ -1,5 +1,5 @@
 ---
-title: 一些不定积分的推导
+title: 不定积分及其推导
 date: 2023-10-27 23:15:09 +0800
 categories: [Learning, Math]
 tags: [Indefinite-Integral]

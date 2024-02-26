@@ -62,7 +62,6 @@ excerpt: 记录在使用C#进行STK二次开发时的操作
 
 + **AGI STK Objects 9**
 + **AGI STK Util 9**
-
 + **AGI STK VGT 9**
 + **AGI STK X 9**
 

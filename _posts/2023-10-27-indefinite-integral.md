@@ -7,10 +7,11 @@ math: true
 excerpt: 总结了一些常用的不定积分的推导过程
 ---
 
-### 摘要
-本文总结了一些形如$\int(mx^2+na^2)^pdx$（其中$a$、$m$、$n$、$p$均为常数）的不定积分及其推导过程。
 
 ### 结论
+
+形如$\int(mx^2+na^2)^pdx$（其中$a$、$m$、$n$、$p$均为常数）的不定积分如下所示：
+
 + $$\int\dfrac{1}{x^2+a^2}dx=\dfrac{1}{a}\arctan\dfrac{x}{a}+C$$
 
 + $$\int\dfrac{1}{-x^2+a^2}dx=\dfrac{1}{2a}\ln\left|\dfrac{a+x}{a-x}\right|+C$$
@@ -29,7 +30,7 @@ excerpt: 总结了一些常用的不定积分的推导过程
     
 + $$\int\sqrt{x^2-a^2}dx=\dfrac{1}{2}\left(x\sqrt{x^2-a^2}-a^2\ln\left|x+\sqrt{x^2-a^2}\right|\right)+C$$
 
-### 推导
+### 推导过程
 + $m=1,n=1,p=-1$时：
 
 $$\begin{aligned}

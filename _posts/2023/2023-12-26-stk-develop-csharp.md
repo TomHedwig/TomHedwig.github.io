@@ -19,9 +19,11 @@ excerpt: 记录在使用C#进行STK二次开发时的操作
 
 ## 新建项目
 
-新建项目时，注意 STK 9 和 STK 11 均只支持 **.NET Framework** 而不支持 **.NET Core**；但是，有时需要应用到 C# 的新语法或特性时，又不得不使用 **.NET Core**（比如要使用 `CommunityToolkit.Mvvm` 的生成器，就必须使用 **.NET Core** ）
+~~新建项目时，注意 STK 9 和 STK 11 均只支持 **.NET Framework** 而不支持 **.NET Core**；但是，有时需要应用到 C# 的新语法或特性时，又不得不使用 **.NET Core**（比如要使用 `CommunityToolkit.Mvvm` 的生成器，就必须使用 **.NET Core** ）~~
 
-在这种情况下，一种方式是将需要使用新语法或特性的内容从主程序中抽离出来，用 **.NET Standard 2.0** 的类库包装这些内容，再在类库中应用新语法或特性；另一种方式则是使用 **.NET Core** 的主程序，但将目标平台设置为 **.Net Framework**
+~~在这种情况下，一种方式是将需要使用新语法或特性的内容从主程序中抽离出来，用 **.NET Standard 2.0** 的类库包装这些内容，再在类库中应用新语法或特性；另一种方式则是使用 **.NET Core** 的主程序，但将目标平台设置为 **.Net Framework**~~
+
+实际上关于 `.NET Core` 和 `.NET Framework` 的选择在 `STK 11`中并没有那么重要，根据笔者的开发过程来看，在二种情况下，可视化组件貌似都可以正常使用；不过，以防万一，还是建议使用 `.NET Framework` 或是使用 `.NET Core` 的主程序，但将目标平台设置为 `.Net Framework`为好
 
 ### 构建平台选择
 

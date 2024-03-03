@@ -282,6 +282,7 @@ h1 + .post-meta {
 #related-posts {
   > h3 {
     @include label(1.1rem, 600);
+    
   }
 
   time {
@@ -292,7 +293,7 @@ h1 + .post-meta {
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 0.9rem;    
     margin-bottom: 0.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -304,6 +305,7 @@ h1 + .post-meta {
   .card {
     h4 {
       @extend %text-clip;
+      color: var(--link-color);
     }
   }
 }

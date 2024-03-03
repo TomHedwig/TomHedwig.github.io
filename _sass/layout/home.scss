@@ -38,8 +38,9 @@
       .card-title {
         @extend %text-clip;
 
-        color: var(--heading-color) !important;
-        font-size: 1.25rem;
+        color: var(--link-color) !important;
+        font-weight: normal;
+        font-size: large;
       }
 
       %muted {
@@ -51,8 +52,9 @@
 
         p {
           @extend %text-clip;
-
-          line-height: 1.5;
+          
+          font-size: medium;
+          line-height: 1;
           margin: 0;
         }
       }
@@ -85,7 +87,8 @@
 
 .pagination {
   color: var(--text-color);
-  font-family: Lato, sans-serif;
+  /*font-family: Lato, sans-serif;*/
+  font-family: $font-family-base;
   justify-content: space-evenly;
 
   a:hover {

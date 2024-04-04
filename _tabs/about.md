@@ -4,17 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-
-<center>
-    <img style="border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="/about.jpg">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-    display: inline-block;
-    color: #999;
-    padding: 2px;">从来就没有什么救世主，也不靠神仙皇帝</div>    
-</center>
+![](/about.jpg)
 
 ### 写在前面
 > **凭栏静听潇潇雨，故国人民有所思**[^footnote-1]

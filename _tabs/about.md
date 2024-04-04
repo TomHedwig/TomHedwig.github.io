@@ -13,7 +13,7 @@ order: 4
 + **昵&emsp;称** : H(x):y=x
 + **性&emsp;别** : 男
 + **现居地** : Harbin, China
-+ **邮&emsp;箱** : [hxyx860824@gmail.com](hxyx860824@gmail.com)
++ **邮&emsp;箱** : hxyx860824@gmail.com
 + **网&emsp;站** : [https://www.hxyx-blog.top](https://www.hxyx-blog.top)
 
 ### 其他

@@ -21,15 +21,15 @@ description: 简单记录一下如何在 VS Code 上配置 LaTeX
 
 #### 1. 安装 Docker 
 
-首先自然是下载 Docker Desktop Installer 了。但是现在这个 Installer 会默认把 Docker Desktop 安装在 C 盘上，为了解决这一问题，参考 Stack Overflow 上的[这篇回答](https://stackoverflow.com/questions/75727062/how-to-install-docker-desktop-on-a-different-drive-location-on-windows)，需要进行以下操作：
+首先自然是下载 Docker Desktop Installer 了。但是现在这个 Installer 会默认把 Docker Desktop 安装在 C 盘上，为了解决这一问题，参考 Stack Overflow 上的[这篇回答](https://stackoverflow.com/questions/75727062/how-to-install-docker-desktop-on-a-different-drive-location-on-windows)以及 Docker 论坛上的[这篇回答](https://forums.docker.com/t/docker-installation-directory/32773/24)，需要进行以下操作：
 
 + 在 `Docker Desktop Installer.exe` 所在的文件夹中，以管理员权限打开 Windows 终端，输入：
 
   ``` shell
-  start /w "" ".\Docker Desktop Installer.exe" install -accept-license  --installation-dir=D:\Docker --wsl-default-data-root=D:\Docker\images
+  Start-Process -Wait -FilePath ".\Docker Desktop Installer.exe" -ArgumentList "install -accept-license --installation-dir=D:\Docker --wsl-default-data-root=D:\Docker\WSL --windows-containers-default-data-root=D:\\Docker\\WindowsContainers"
   ```
 
-  其中，`D:\Docker` 是 Docker Desktop 的安装位置，`D:\Docker\images` 是容器镜像的存储位置。
+  其中，`D:\Docker` 是 Docker Desktop 的安装位置，`D:\Docker\WSL` 是 WSL 数据的存储位置；`D:\\Docker\\WindowsContainers` 是 Windows 容器的存储位置。
 
 #### 2. 拉取镜像
 

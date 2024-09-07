@@ -53,8 +53,4 @@ docker pull texlive/texlive
   texlive/texlive
   ```
 
-
 需要说明的是，由于这两项配置是针对所有使用 VS Code 编辑的 LaTeX 项目，即不需要在每个 LaTeX 项目文件夹中生成 `.vscode` 文件夹进行配置，因此无需通过 Workspace 进行工作区设置，而是直接使用 User 进行用户设置即可。
-
-
-

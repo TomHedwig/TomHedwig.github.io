@@ -1,5 +1,5 @@
 ---
-title: VS Code 开发环境配置（三）
+title: VS Code 开发环境配置（二）
 date: 2024-04-29 12:14:33 +0800
 categories: [Programming, Development-Logs]
 tags: [Visual Studio Code]
@@ -26,17 +26,17 @@ description: 简单记录一下如何在 VS Code 上配置 LaTeX
 + 在 `Docker Desktop Installer.exe` 所在的文件夹中，以管理员权限打开 Windows 终端，输入：
 
   ``` shell
-  Start-Process -Wait -FilePath ".\Docker Desktop Installer.exe" -ArgumentList "install -accept-license --installation-dir=D:\Docker --wsl-default-data-root=D:\Docker\WSL --windows-containers-default-data-root=D:\\Docker\\WindowsContainers"
+  Start-Process -Wait -FilePath ".\Docker Desktop Installer.exe" -ArgumentList "install -accept-license --installation-dir=D:\\Environment\\Docker --wsl-default-data-root=E:\\Environment\\Docker\\wsl --windows-containers-default-data-root=E:\\Environment\\Docker\\windows --hyper-v-default-data-root=E:\\Environment\\Docker\\hyperv"
   ```
 
-  其中，`D:\Docker` 是 Docker Desktop 的安装位置，`D:\Docker\WSL` 是 WSL 数据的存储位置；`D:\\Docker\\WindowsContainers` 是 Windows 容器的存储位置。
+  其中，`D:\\Environment\\Docker` 是 Docker Desktop 的安装位置，`E:\\Environment\\Docker\\wsl` 是 WSL 后端数据的存储位置；`E:\\Environment\\Docker\\windows` 是 Windows 容器的存储位置；`E:\\Environment\\Docker\\hyperv` 是Hyper-V VM 磁盘的存储位置。
 
 #### 2. 拉取镜像
 
 打开命令行窗口，输入：
 
 ```shell
-docker pull texlive/texlive
+docker pull texlive/texlive:latest
 ```
 
 然后耐心等待即可。
@@ -52,5 +52,3 @@ docker pull texlive/texlive
   ```text
   texlive/texlive
   ```
-
-需要说明的是，由于这两项配置是针对所有使用 VS Code 编辑的 LaTeX 项目，即不需要在每个 LaTeX 项目文件夹中生成 `.vscode` 文件夹进行配置，因此无需通过 Workspace 进行工作区设置，而是直接使用 User 进行用户设置即可。
